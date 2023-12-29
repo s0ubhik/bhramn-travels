@@ -5,15 +5,16 @@ function index($req){
 }
 
 function feedback($req){
-    $feedbck = R::dispense('feedbacks');
+    global $mongo;
 
-    foreach (['name', 'email', 'feedback'] as $key) {
-        $feedbck->{$key} = $req->req($key);
-    }
+    $feedbcks = $mongo->travel->feedbacks;
+
+    foreach (['name', 'email', 'feedback'] as $key) 
+        $feedbck[$key] = $req->req($key);
     
-    R::store($feedbck);
-    $req->success(["message" => "Thanks for the feedback :)"]);
+    $feedbcks->insertOne($feedbck);
 
+    $req->success(["message" => "Thanks for the feedback :)"]);
 }
 
 $routes['/'] = ['index'];
