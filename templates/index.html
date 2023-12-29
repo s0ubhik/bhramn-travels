@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhramn Travels</title>
+    <link rel="preload" as="image" href="assets/images/wallpaper.webp">
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.png">
+    <link rel="stylesheet" href="assets/css/custom-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- HOME -->
+    <div id="home" class="section">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="nav-bar">
+                <div class="nav-title">
+                    <div class="c-logo"><img src="assets/icons/logo.png" alt=""></div> <span class="c-name">Bhramn
+                        Travels</span>
+                </div>
+                <div class="nav-links">
+                    <div><a href="#home" class="link-active">HOME</a></div>
+                    <div><a href="#about">ABOUT</a></div>
+                    <div><a href="#contact">CONTACT</a></div>
+                </div>
+            </div>
+            <div id="quote-text">
+                <div>Sail into the heart of the Atlantic, where every wave tells a story, and every sunrise paints a new
+                    adventure</div> <span class="explore" onclick="window.location='#explore'">Explore <img
+                        src="assets/icons/right-arrow.png" alt=""></span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div id="about" class="section">
+        <div class="content">
+            <h2>ABOUT US</h2>
+            <p>Embark on a journey with Your Travel Guide, your trusted partner in Atlantic exploration. Our passion
+                lies in crafting an immersive experience for adventurers seeking the extraordinary. As the premier
+                travel authority, we go beyond traditional guides, offering a curated collection of insights, tips, and
+                recommendations that elevate your journey.</p>
+            <p>At Your Travel Guide, we understand that the Atlantic Ocean is not just a body of water but a realm of
+                endless possibilities. Our commitment is to unveil the secrets of this vast expanse, ensuring that every
+                traveler discovers the richness of its diverse landscapes and cultures.</p>
+            <div class="ship-imgs"> <img class="img1" src="assets/images/ship1.jpg" alt=""> <img class="img2"
+                    src="assets/images/ship2.jpg" alt=""> </div>
+            <p>Whether you're a seasoned explorer or a first-time adventurer, our guide is designed to cater to your
+                wanderlust. Navigate coastal wonders, delve into vibrant marine life, and embrace the thrill of
+                discovery. Let Your Travel Guide be your compass, guiding you to unparalleled experiences that linger in
+                your memory.</p>
+            <p>Join us on this odyssey, where every page of our guide is a step towards turning your Atlantic dreams
+                into reality. Trust Your Travel Guide — your compass to extraordinary adventures on the canvas of the
+                Atlantic Ocean</p>
+        </div>
+    </div>
+    
+    <!-- EXPLORE -->
+    <div id="explore" class="section">
+        <div class="content">
+            <h2>EXPLORE</h2>
+            <p>Select the place you want to explore in the Atlantic Ocean</p>
+            <div class="custom-select" style="width:200px;"> <select id="mySelect" change="open_wiki">
+                    <option value="0">Select place</option>
+                    <option value="Faroe_Islands">Faroe Islands</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="Azores">Azores</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Bordeaux">Bordeaux</option>
+                    <option value="Fernando_de_Noronha">Fernando de Noronha</option>
+                    <option value="Canary_Islands">Canary Islands</option>
+                    <option value="Savannah">Savannah</option>
+                    <option value="Prince_Edward_Island">Prince Edward Island</option>
+                    <option value="Saint_Barthélemy">Saint Barthélemy</option>
+                </select> </div>
+        </div>
+    </div>
+
+    <div id="feedback" class="section">
+        <div class="content">
+            <h2>FEEDBACK</h2>
+            <p>We value your feedback! Share your thoughts and experiences with us to help enhance our travel guide. Your insights are crucial in making our guide even more tailored to your needs. Whether it's a suggestion, a highlight, or a memorable moment from your journey, we appreciate your contribution. Thank you for being a part of our travel community!</p>
+            <div class="feedback-form">
+                <form method="post" id="feedback">
+                    <table>
+                        <tr class="field">
+                            <td class="label">Name: </td>
+                            <td><input type="text" required name="name"></td>
+                        </tr>
+                        <tr class="field">
+                            <td class="label">Email: </td>
+                            <td><input type="email" required name="email"></td>
+                        </tr class="field">
+                        <tr class="field">
+                            <td colspan="2" class="label">Feedback:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea required name="feedback" cols="30" rows="10" maxlength="250"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div id="feedback-log"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="button">
+                                <input type="submit" value="Send">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+        <div class="content">
+            <h2>CONTACT</h2>
+            <div class="contacts">
+                <div class="row">
+                    <div class="col">
+                        <div class="c-logo"><img src="assets/icons/logo.png" alt=""></div> <span class="c-name">Bhramn
+                            Travels</span>
+                    </div>
+                    <div class="col"> <br>
+                        <div>&copy; 2023 bhramntravels.com</div>
+                    </div>
+                    <div class="col">
+                        <div>Powered By Soubhik Biswas</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>Address</h4>
+                        <div>456 Elm Avenue Suite 789 Metropolis City, NY 12345</div>
+                    </div>
+                    <div class="col some-links"> <a>Terms</a> <a>Services</a> <a>Support</a> </div>
+                </div>
+                <div class="row">
+                    <div class="col social-icons"> <svg class="" width="19" height="19" viewBox="0 0 19 19"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Facebook</title>
+                            <path
+                                d="M6.531 6.906H4V9.86h2.531v8.86h4.219v-8.86h3.073l.302-2.953H10.75v-1.23c0-.706.162-.985.94-.985h2.435V1h-3.213c-3.034 0-4.38 1.169-4.38 3.407v2.5z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg> <svg class="" width="19" height="19" viewBox="0 0 19 19"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M9.281 1.673c2.478 0 2.772.01 3.751.054 2.516.115 3.69 1.308 3.805 3.805.045.978.053 1.272.053 3.75 0 2.479-.009 2.772-.053 3.75-.115 2.495-1.287 3.69-3.805 3.805-.979.045-1.271.054-3.75.054s-2.773-.01-3.751-.054c-2.522-.115-3.69-1.314-3.805-3.805-.045-.979-.054-1.272-.054-3.75 0-2.479.01-2.772.054-3.751.116-2.496 1.287-3.69 3.805-3.805.979-.044 1.272-.053 3.75-.053zm0-1.673c-2.52 0-2.836.01-3.826.056C2.085.21.211 2.08.056 5.454.011 6.445 0 6.761 0 9.281s.01 2.837.056 3.827c.154 3.37 2.025 5.244 5.398 5.399.991.045 1.307.055 3.827.055s2.837-.01 3.827-.055c3.368-.155 5.246-2.025 5.398-5.399.046-.99.056-1.306.056-3.827 0-2.52-.01-2.836-.055-3.826-.152-3.367-2.024-5.244-5.398-5.399C12.119.011 11.802 0 9.281 0zm0 4.515a4.766 4.766 0 100 9.533 4.766 4.766 0 000-9.533zm0 7.86a3.093 3.093 0 110-6.187 3.093 3.093 0 010 6.187zm4.955-9.161a1.114 1.114 0 100 2.228 1.114 1.114 0 000-2.228z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg> <svg class="" width="19" height="19" viewBox="0 0 19 19"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M17.55 0c.773 0 1.4.608 1.4 1.357v16.236c0 .75-.627 1.357-1.4 1.357H1.4c-.773 0-1.4-.607-1.4-1.357V1.357C0 .608.627 0 1.4 0h16.15zM5.86 7.26H3.024v8.532H5.86V7.26zm6.96-.2c-1.452 0-2.131.772-2.516 1.348l-.039.06V7.261H7.429c.01.2.014.833.016 1.67v1.788c-.002 1.826-.01 3.844-.014 4.679l-.001.213v.181h2.835v-4.764c0-.255.018-.51.093-.692.205-.51.672-1.037 1.455-1.037 1.026 0 1.437.782 1.437 1.93v4.563h2.835V10.9c0-2.62-1.399-3.84-3.264-3.84zM4.462 3.148c-.97 0-1.604.636-1.604 1.474 0 .818.615 1.474 1.567 1.474h.018c.989 0 1.605-.656 1.605-1.474-.019-.838-.616-1.474-1.586-1.474z"
+                                fill="currentColor" fill-rule="nonzero"></path>
+                        </svg></span> </div>
+                    <div class="col">
+                        <h4>Phone</h4> <span>+1 (442) 324 1223</span>
+                    </div>
+                    <div class="col">
+                        <h4>Email</h4> <span>contact@bhramntravels.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/custom-select.js"></script>
+    <script> 
+    function open_wiki(tag) {
+        window.open("https://en.wikipedia.org/wiki/" + tag, '_blank').focus();
+    }
+    
+    document.getElementById('feedback').addEventListener('submit', function (event) {
+    event.preventDefault(); 
+
+  const formData = new FormData(event.target);
+  const formDataJSON = {};
+  formData.forEach((value, key) => {
+    
+    formDataJSON[key] = value;
+  });
+
+  const url = '/feedback';
+
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formDataJSON),
+  };
+
+  fetch(url, options)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      document.getElementById("feedback-log").innerText = data.message;
+        const container = document.getElementById('feedback');
+        const elementsToClear = container.querySelectorAll('input, textarea');
+        elementsToClear.forEach(element => {
+            if ( (element.tagName === 'INPUT' && ['text', 'email'].includes(element.getAttribute('type'))) || element.tagName === 'TEXTAREA') element.value = ''; 
+        });
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      document.getElementById("feedback-log").innerHTML = "<span style='color: darkred'>Error Sending Response :(</span>"
+    });
+});
+    </script>
+
+</body>
+
+</html>
